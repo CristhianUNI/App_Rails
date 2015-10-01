@@ -1,31 +1,50 @@
-<h1>Listing books</h1>
+<header>
 
-<table>
-  <thead>
-    <tr>
-      <th>Author</th>
-      <th>Title</th>
-      <th>Description</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
+  <div class="centrar">
+    <div class="logo">
+      Logo
+    </div>
+    <nav>
 
-  <tbody>
-    <% @books.each do |book| %>
+          <a href="#">Inicio</a>
+          <a href="#">Información</a>
+          <a href="#">Contacto</a>
+
+
+      </nav>
+  </div>
+</header>
+
+<div class="contenedor">
+  <h1>Libros Generales</h1>
+  <table>
+    <thead>
       <tr>
-        <td><%= book.author %></td>
-        <td><%= book.title %></td>
-        <td><%= book.description %></td>
-        <td><%= link_to 'Show', book %></td>
-        <td><%= link_to 'Edit', edit_book_path(book) %></td>
-        <td><%= link_to 'Destroy', book, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <th class="columnas">Autor</th>
+        <th class="columnas">Título</th>
+        <th class="columnas">Descripción</th>
+        <th></th>
+        <th></th>
+        <th></th>
       </tr>
-    <% end %>
-  </tbody>
-</table>
+    </thead>
+
+    <tbody>
+      <% @books.each do |book| %>
+        <tr>
+          <td><%= book.author %></td>
+          <td><%= book.title %></td>
+          <td><%= book.description %></td>
+          <td><%= link_to 'Mostrar', book %></td>
+          <td><%= link_to 'Editar', edit_book_path(book) %></td>
+          <td><%= link_to 'Eliminar', book, method: :delete, data: { confirm: 'Esta seguro que desea borrar el registro?' } %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+</div>
 
 <br>
 
-<%= link_to 'New Book', new_book_path %>
+<%= link_to 'Ingresar nuevo libro', new_book_path %>

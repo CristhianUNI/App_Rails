@@ -1,3 +1,66 @@
 // Place all the styles related to the Books controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+table{
+  margin-left: 150px;
+}
+
+h1{
+  font-family: cursive;
+  font-weight: lighter;
+  margin-left: 40px;
+  padding: 15px;
+}
+
+.centrar{
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.columnas{
+  font-family: cursive;
+  font-weight: bold;
+}
+
+.contenedor{
+  background-color: #fffffa;
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}
+
+header{
+  width: 100%;
+  overflow: hidden;
+  background-color: #252932;
+  margin-bottom: 20px;
+}
+
+.logo{
+  color: #f2f2f2;
+  font-size: 50px;
+  line-height: 150px;
+  float: left;
+}
+
+header nav{
+  float: right;
+  line-height: 150px;
+}
+
+header nav a{
+  display: inline-block;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 20px;
+  line-height: normal;
+  font-weight: bold;
+}
