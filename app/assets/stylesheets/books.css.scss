@@ -6,9 +6,13 @@
   margin: 0px;
   padding: 0px;
 }
-table{
-  margin-left: 150px;
-}
+table {  color: #333; font-family: Helvetica, Arial, sans-serif; width: 640px; border-collapse: collapse;}
+td, th { border: 1px solid transparent; height: 30px; }
+th { background: #D3D3D3; font-weight: bold; }
+td { background: #FAFAFA; text-align: center; }
+tr:nth-child(even) td { background: #F1F1F1; }
+tr:nth-child(odd) td { background: #FEFEFE; }
+tr td:hover { background: #666; color: #FFF; }
 
 h1{
   font-family: cursive;
@@ -49,6 +53,8 @@ header{
   font-size: 50px;
   line-height: 150px;
   float: left;
+  cursor: pointer;
+  margin-top: 20px;
 }
 
 header nav{
@@ -58,9 +64,19 @@ header nav{
 
 header nav a{
   display: inline-block;
-  color: #ffffff;
+  margin-top: 80px;
+  color: #ffffff;//esta lina no funciona
   text-decoration: none;
   padding: 10px 20px;
   line-height: normal;
   font-weight: bold;
+  font-size: 19px;
+  -webkit-transition:all 500ms ease;
+  -o-transition:all 500ms ease;
+  transition:all 500ms ease;
+}
+
+header nav a:hover{
+  background-color: rgba(189, 167, 24, 0.84);
+  border-radius: 30px;
 }
