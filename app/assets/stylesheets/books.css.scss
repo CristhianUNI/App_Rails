@@ -6,13 +6,129 @@
   margin: 0px;
   padding: 0px;
 }
-table {  color: #333; font-family: Helvetica, Arial, sans-serif; width: 640px; border-collapse: collapse;}
-td, th { border: 1px solid transparent; height: 30px; }
-th { background: #D3D3D3; font-weight: bold; }
-td { background: #FAFAFA; text-align: center; }
-tr:nth-child(even) td { background: #F1F1F1; }
-tr:nth-child(odd) td { background: #FEFEFE; }
-tr td:hover { background: #666; color: #FFF; }
+
+table th{
+  text-align: center;
+  background:-o-linear-gradient(bottom, #011119 5%, #011119 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #011119), color-stop(1, #011119) );
+  background:-moz-linear-gradient( center top, #011119 5%, #011119 100% );
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#011119", endColorstr="#011119");	background: -o-linear-gradient(top,#011119,011119);
+  color: #FFF;
+  background-color:#011119;
+}
+table {
+  color: #333;
+  font-family: Helvetica, Arial, sans-serif;
+  width: 800px;
+  border-collapse: collapse;
+  text-align: center;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin:0px;padding:0px;
+}
+
+td, th {
+  border: 1px solid transparent;
+  height: 30px;
+}
+
+th {
+   background: #D3D3D3;
+   font-weight: bold;
+   font-family: cursive;
+   font-weight: bold;
+}
+td {
+  background: #FAFAFA;
+   text-align: center;
+ }
+
+ .div_tabla{
+     overflow:scroll;
+     height:300px;
+     width:800px;
+     margin:0px;
+     padding:0px;
+
+  	box-shadow: 10px 10px 5px #888888;
+  	border:1px solid #000000;
+
+  	-moz-border-radius-bottomleft:9px;
+  	-webkit-border-bottom-left-radius:9px;
+  	border-bottom-left-radius:9px;
+
+  	-moz-border-radius-bottomright:9px;
+  	-webkit-border-bottom-right-radius:9px;
+  	border-bottom-right-radius:9px;
+
+  	-moz-border-radius-topright:9px;
+  	-webkit-border-top-right-radius:9px;
+  	border-top-right-radius:9px;
+
+  	-moz-border-radius-topleft:9px;
+  	-webkit-border-top-left-radius:9px;
+  	border-top-left-radius:9px;
+ }
+
+ .div_tabla tr:last-child td:last-child {
+	-moz-border-radius-bottomright:9px;
+	-webkit-border-bottom-right-radius:9px;
+	border-bottom-right-radius:9px;
+}
+.div_tabla table tr:first-child td:first-child {
+	-moz-border-radius-topleft:9px;
+	-webkit-border-top-left-radius:9px;
+	border-top-left-radius:9px;
+}
+.div_tabla table tr:first-child td:last-child {
+	-moz-border-radius-topright:9px;
+	-webkit-border-top-right-radius:9px;
+	border-top-right-radius:9px;
+}.div_tabla tr:last-child td:first-child{
+	-moz-border-radius-bottomleft:9px;
+	-webkit-border-bottom-left-radius:9px;
+	border-bottom-left-radius:9px;
+}
+
+.div_tabla tr:nth-child(odd){ background-color:#e5e5e5; }
+.div_tabla tr:nth-child(even)    { background-color:#ffffff; }.CSSTableGenerator td{
+	vertical-align:middle;
+
+
+	border:1px solid #000000;
+	border-width:0px 1px 1px 0px;
+	text-align:left;
+	padding:13px;
+	font-size:10px;
+	font-family:Arial;
+	font-weight:bold;
+	color:#000000;
+}.div_tabla tr:last-child td{
+	border-width:0px 1px 0px 0px;
+}.div_tabla tr td:last-child{
+	border-width:0px 0px 1px 0px;
+}.div_tabla tr:last-child td:last-child{
+	border-width:0px 0px 0px 0px;
+}
+
+
+.div_tabla tr:first-child td:first-child{
+	border-width:0px 0px 1px 0px;
+}
+.div_tabla tr:first-child td:last-child{
+	border-width:0px 0px 1px 1px;
+}
+
+tr:nth-child(even) td {
+  background: #F1F1F1;
+ }
+tr:nth-child(odd) td {
+  background: #FEFEFE;
+ }
+tr td:hover {
+  background: #666;
+  color: #FFF;
+  cursor:default;
+}
 
 h1{
   font-family: cursive;
@@ -26,11 +142,6 @@ h1{
   max-width: 1000px;
   margin: auto;
   overflow: hidden;
-}
-
-.columnas{
-  font-family: cursive;
-  font-weight: bold;
 }
 
 .contenedor{
@@ -79,4 +190,34 @@ header nav a{
 header nav a:hover{
   background-color: rgba(189, 167, 24, 0.84);
   border-radius: 30px;
+  text-decoration: none;
 }
+ /*
+footer{
+   width: 100%;
+   background-color:  #252932;
+   height: 30px;
+   color: white;
+    position: fixed;
+   left: 0;
+   bottom: 0;
+   border-top: 4px solid rgba(11, 99, 247, 0.61);
+
+}
+
+footer p{
+  margin: 0;
+  padding: 0;
+  float:left;
+
+}
+
+footer .container #derecha{
+  color:white;
+  float: right;
+}
+*/
+
+
+
+//Formulario estilos....
